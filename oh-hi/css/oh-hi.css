@@ -1,0 +1,210 @@
+﻿/*
+ * 
+ T his file is part of OhHi      *
+ http://github.com/brandon-lockaby/OhHi
+ 
+ (c) Brandon Lockaby http://about.me/brandonlockaby for http://oh-hi.info
+ 
+ OhHi is free software licensed under Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)
+ http://creativecommons.org/licenses/by-nc-sa/3.0/
+ 
+ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Monospace", serif;
+    text-align: center; /* exclude exif window */
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #FF8800;
+    background-color: #222;
+    /* 	text-align: center; // exclude exif window */
+    font-size: 10px;	/*needs to be 10 to retain vertical gap between images*/
+}
+a {
+    color: #FF8800;
+    visited: #BB4400;
+}
+li {
+    list-style-type:none; /*<li> bullets - REALLY 	*/
+}
+/* ========================== */
+.big {
+/*     font-size: 36px;       */
+    font-size: 26px; /*combines with h2 in ./index.php for seo??*/
+}
+/* ========================== */
+#faqtext {
+    font-size: 14px;
+}
+/* ========================== */
+.invisible {
+    font-size: 5px;
+    color: #222;
+}
+.invisible a {
+    font-size: 5px;
+    /*         display:none; */
+    color: #222;
+    text-decoration:none;
+}/* ========================== */
+.calendarform {
+    font-size:30px;
+    font-weight:normal;
+    text-align:left;
+}
+/* ========================== */
+#images {
+margin-top: 0px;
+text-align: left; /* exclude exif window */
+}
+.image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 1px 1px 1px 1px;	
+}
+/* ========================== */
+/* more is background to share, histogram, exif */
+.more {
+    position: absolute;
+    width:266px;
+    left: 8px;
+    bottom: 8px;
+    background: #888;
+    overflow: hidden;
+    padding: 3px;
+    display: none;
+    border: 2px dotted #000;
+    background: #fff;
+}
+/* ============ */
+/* exif displays text exif data */
+.exif {
+    background: #ddd;
+    font-size:14px;
+    color: black;
+    padding: 4px 3px 4px 3px;    
+}
+.exif a {
+    font-weight:bold;
+    font-size:1.75em;
+    text-decoration:none;
+}
+.exif a img {
+    height:0.75em;
+}
+/* ============ */
+.histogram {
+    background-image: url("/oh-hi/images/histogram-background.png");
+}
+/* ============ */
+/*  share holds share buttons AND histogram */
+.share {
+    padding: 0px 0px 0px 0px;    
+    background: #000;
+    width: 100%;    
+    float: left;
+} 
+/* sharecontainer is for spacing share buttons horizontally */
+.shareContainer {
+    padding: 0px;
+    width: 44px;
+    height: 44px;
+    float: left;
+}
+
+.shareContainer img {
+    border: 2px dotted #000;
+    background: #fff;
+    height:42px;
+    width:42px;
+}
+
+/* ========================== */
+#menu_wrapper
+{
+    z-index: 1000;
+    padding: 8px 8px 8px 8px;	
+    height:36px;
+    position: fixed; 
+    top: 0px;
+    left: 0px;
+    text-align:left;
+    font-family: "Monospace", serif;
+    font-size:36px;
+    font-weight:normal;
+    display:block;
+    border: 0px;    
+}
+/* L1-2 submenu position*/
+#menu_wrapper ul li
+{
+    position:relative;
+    float:left;
+}
+/* L0-2 all decorations and oh-hi padding */
+#menu_wrapper ul a
+{
+    display:block;
+    text-decoration:none;
+    padding:0px 5px;
+}
+/* ========================== */
+/* cant display any menu without this */
+#menu_wrapper ul li:hover > ul
+{
+    display:block;
+    /*      background:#333; */
+}
+/* L0-2 li a */
+#menu_wrapper ul li:hover
+{
+    background:#666;
+}
+#menu_wrapper ul a:hover
+{
+    color:gold;
+    font-weight:900;
+}
+/* ========================== */
+/* L1-2 popout/hiding of submenus & background color */
+#menu_wrapper ul ul
+{
+    background:#333;
+    display:none;
+    position:absolute;
+
+border: 0px;
+}
+
+/*L2 alignment of sub menus relative to year menu */
+#menu_wrapper ul ul ul
+{
+    top:0;
+    left:100%;
+    /*     text-align:left;	 */
+    text-align:right;	
+}
+/* L1-2 left justify menu1 and menu2 */
+#menu_wrapper ul ul li
+{
+    padding:10px 0px;
+    width:100%;    
+    border: 0px;    
+}
+#menu_wrapper ul ul a
+{
+    text-align:left;
+border: 0px;    
+}
+/* L2 */
+#menu_wrapper ul ul ul a
+{
+   text-align:right;
+    border: 0px;    
+}
+/* ========================== */

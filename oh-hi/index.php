@@ -10,4 +10,5 @@
 		http://creativecommons.org/licenses/by-nc-sa/3.0/
 		
 	*/
+    header("Refresh: 0; url=/");
 ?>

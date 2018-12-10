@@ -31,7 +31,8 @@
 			
 			// add new files to cache
 			
-			$pattern = '/(\.jpg$)|(\.jpeg$)|(\.gif$)/';
+// 			$pattern = '/(\.jpg$)|(\.jpeg$)|(\.gif$)/';
+			$pattern = '/(\.jpg$)|(\.jpeg$)/';
 			foreach($filenames as $filename) {
 				if(!preg_match($pattern, $filename)) {
 					continue;
@@ -98,7 +99,7 @@
 			while(($kvp = each($data)) && $kvp['key'] !== $from) {
 			}
 			prev($data);
-			prev($data);
+ 			prev($data); //why is this doubled?
 			// result
 			$result = array();
 			for($i = 0; $i < $number; $i++) {
