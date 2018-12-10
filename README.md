@@ -13,3 +13,8 @@ Problem?
 --------
 
 The software creates a file named `cache` in your image folder -- if something breaks, try removing the cache file
+
+Notes:
+------
+ The date picker ('pick' menu option) locates and displays the nearest photos the the date entered, and relies on specially named jpg index files being present within the usual image folders.
+  See: generate_1x720px-dated-index-images.sh
