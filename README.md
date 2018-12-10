@@ -16,5 +16,6 @@ The software creates a file named `cache` in your image folder -- if something b
 
 Notes:
 ------
- The date picker ('pick' menu option) locates and displays the nearest photos the the date entered, and relies on specially named jpg index files being present within the usual image folders.
-  See: generate_1x720px-dated-index-images.sh
+Script: generate_1x720px-dated-index-images.sh - The date picker ('pick' menu option) locates and displays the nearest photos to the date searched, and relies on specially named and intentionally invisible jpg index files being present within the usual image folders. Script user variables are edited to reflect current needs and executed locally every time I make a new YYYY_M-M folder and the results uploaded.
+ 
+Script: betlogCreateIndexImage.sh - after editing the photos I shot that day they are exported to ./pub/, and this script is executed. It exampines the available (./pub/) images' exif datetimestamps and generates a black image with the date printed on it. Filename is also the datestamp. These are mostly for visual reference, but also serve to fuzzy-locate dates searched in the 'pick' menu. (as above)
