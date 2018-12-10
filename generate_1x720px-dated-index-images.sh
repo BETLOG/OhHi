@@ -1,6 +1,8 @@
 #!/bin/bash
 # betlog 
-# Generate 1x720px images named by datetimestamp
+# Generate 1x720px images named by datetimestamp. 
+#   Allows the 'pick' menu to seek the date nearest to that being searched for. 
+#   If there is a *large* number of index images packed together (with no display images between them) they will offset the display of images; by one pixel each. This can sometimes be noticeable as a vertical gap between the stream of photos.
 # 
 # years="2010 2011 2012 2013 2014 2015"
 # months='9 12'
